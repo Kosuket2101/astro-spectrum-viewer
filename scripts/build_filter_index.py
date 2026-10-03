@@ -39,7 +39,7 @@ for path in sorted(FILTER_DIR.rglob("*")):
     entry = {
         "name": meta.get("name", path.stem),
         "path": rel,
-        "wavelength_unit": meta.get("wavelength_unit", "nm"),
+        "wavelength_unit": meta.get("wavelength_unit", "angstrom"),
     }
     if "color" in meta:
         entry["color"] = meta["color"]

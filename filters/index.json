@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Example g-like filter",
+    "path": "filters/example_filter.csv",
+    "wavelength_unit": "nm",
+    "color": "#2f80ed"
+  }
+]

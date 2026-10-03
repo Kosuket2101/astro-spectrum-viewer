@@ -1,0 +1,17 @@
+# name: Example g-like filter
+# wavelength_unit: nm
+# color: #2f80ed
+wavelength,throughput
+360,0.00
+380,0.05
+400,0.25
+420,0.55
+440,0.82
+460,0.96
+480,1.00
+500,0.92
+520,0.70
+540,0.38
+560,0.12
+580,0.02
+600,0.00

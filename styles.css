@@ -158,7 +158,7 @@ button {
   gap: 8px;
 }
 
-.filter-list { max-height: 320px; overflow: auto; }
+.filter-list { max-height: 430px; overflow: auto; padding-right: 3px; }
 
 .spectrum-card {
   border: 1px solid var(--border);
@@ -208,6 +208,118 @@ button {
 .filter-item input[type="checkbox"] {
   width: auto;
   margin: 0;
+}
+
+
+.filter-search-label { margin-bottom: 6px; }
+
+.filter-global-actions,
+.filter-group-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.filter-global-actions {
+  justify-content: space-between;
+  margin: 7px 0 10px;
+}
+
+.filter-group-actions {
+  padding: 5px 8px 7px 24px;
+}
+
+.secondary-button,
+.filter-action-button {
+  width: auto;
+  margin: 0;
+  padding: 5px 9px;
+  font-size: 11px;
+  background: var(--panel2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.filter-tree {
+  display: grid;
+  gap: 7px;
+}
+
+.filter-telescope,
+.filter-instrument {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel3);
+  overflow: hidden;
+}
+
+.filter-instrument {
+  margin: 0 7px 7px;
+  background: rgba(255,255,255,.025);
+}
+
+.filter-telescope > summary,
+.filter-instrument > summary {
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.filter-telescope > summary::-webkit-details-marker,
+.filter-instrument > summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter-telescope > summary {
+  padding: 8px 9px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.filter-instrument > summary {
+  padding: 7px 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.filter-telescope > summary::before,
+.filter-instrument > summary::before {
+  content: "▶";
+  font-size: 9px;
+  margin-right: 2px;
+}
+
+.filter-telescope[open] > summary::before,
+.filter-instrument[open] > summary::before {
+  content: "▼";
+}
+
+.filter-summary-name {
+  flex: 1;
+}
+
+.filter-summary-count {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.filter-items {
+  padding: 0 8px 6px 22px;
+}
+
+.filter-item {
+  margin: 0;
+}
+
+.filter-item-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .workspace {

@@ -906,7 +906,7 @@ async function ensureFilterLoaded(info) {
   const unit =
     meta.wavelength_unit ||
     info.wavelength_unit ||
-    "nm";
+    "angstrom";
 
   const parsed =
     parseTwoColumn(
